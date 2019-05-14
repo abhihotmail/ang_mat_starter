@@ -18,7 +18,7 @@
 
         <ng-container matColumnDef="job">
             <mat-header-cell *matHeaderCellDef mat-sort-header> Job </mat-header-cell>
-            <mat-cell *matCellDef="let element"> {{element.job}} </mat-cell>
+            <mat-cell *matCellDef="let element" [ngClass]="{'color-green' : element.job==='Programmer'}" > {{element.job}} </mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="operations">
