@@ -12,11 +12,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { ErrorComponent } from './error/error.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 const appRoutes: Routes = [
   { path: 'customer-list', component: CustomerListComponent },
   { path: 'customer-create', component: CustomerCreateComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'contactus', component: ContactusComponent },
   {
     path: 'login',
     component: LoginComponent
@@ -34,7 +38,9 @@ const appRoutes: Routes = [
     LoginComponent,
     CustomerListComponent,
     CustomerCreateComponent,
-    ErrorComponent
+    ErrorComponent,
+    AboutusComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
